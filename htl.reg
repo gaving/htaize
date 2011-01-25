@@ -1,0 +1,12 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\hta]
+@="URL:hta Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\hta\shell]
+
+[HKEY_CLASSES_ROOT\hta\shell\open]
+
+[HKEY_CLASSES_ROOT\hta\shell\open\command]
+@="\"C:\\gavin\\stuff\\htl.exe\" \"-q %1\"" 
