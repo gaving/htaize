@@ -163,7 +163,9 @@ def main():
 
     print "Saved to %s" % path
     if options['launch']:
-        os.system(path + '&')
+        # os.system(path + '&')
+        import subprocess
+        subprocess.Popen([ 'mshta.exe', path ])
 
 if __name__=="__main__":
     main()
