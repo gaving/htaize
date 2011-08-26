@@ -33,7 +33,7 @@ from optparse import OptionParser, OptionGroup
 options = {}
 DEFAULTS = {
     'title': 'HTA',
-    'icon': 'migpwd.exe',
+    'icon': 'ahui.exe',
     'bundle_icon': None
 }
 
@@ -91,7 +91,7 @@ def main():
         try:
             title = qs['title'][0]
         except KeyError:
-            title = DEFAULTS['title']
+            title = path
 
         try:
             icon = qs['icon'][0]
