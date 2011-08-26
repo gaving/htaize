@@ -9,9 +9,7 @@
 
     Path issues executing from windows:-
 
-    SET PATH="C:\Python26"
-    PATH=
-    echo %PATH%
+    SET PATH="C:\Python26";  echo %PATH%
 
 ## installation
 
@@ -20,6 +18,11 @@
 
     Note the bundle options in setup.py
 
+## examples
+
+    - ./htaize.py -p http://localhost/test/ -t "TEST" -I icons/red.ico -o htas/testembed.hta
+    - ./htaize.py -p http://localhost/scope/ -t "TEST" -i http://test.com/path/to/ico.ico -o htas/hta.hta
+
 # notes
 
     http://stackoverflow.com/questions/175994/can-i-embed-an-icon-to-a-hta-file
@@ -27,3 +30,5 @@
 
     import subprocess
     subprocess.Popen([ 'mshta.exe', path ], stdin=open(os.devnull), stdout=open(os.devnull, "w"), stderr=subprocess.STDOUT) 
+
+
